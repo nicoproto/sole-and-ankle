@@ -35,6 +35,7 @@ const ShoeCard = ({
     <Link href={`/shoe/${slug}`}>
       <Wrapper>
         <ImageWrapper>
+          <SalePrice>{variant}</SalePrice>
           <Image alt="" src={imageSrc} />
         </ImageWrapper>
         <Spacer size={12} />
@@ -84,7 +85,13 @@ const ColorInfo = styled.p`
 
 const SalePrice = styled.span`
   font-weight: ${WEIGHTS.medium};
-  color: ${COLORS.primary};
+  background-color: ${COLORS.primary};
+  color: ${COLORS.white};
+  padding: 8px;
+  border-radius: 2px;
+  position: absolute;
+  right: -4px;
+  top: 12px;
 `;
 
 export default ShoeCard;
