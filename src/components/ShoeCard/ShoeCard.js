@@ -66,10 +66,16 @@ const ImageWrapper = styled.div`
 
 const Image = styled.img`
   width: 100%;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
 `;
 
 const Row = styled.div`
   font-size: 1rem;
+  display: flex;
+  justify-content: space-between;
 `;
 
 const Name = styled.h3`
